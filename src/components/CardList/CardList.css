@@ -1,0 +1,13 @@
+.CardList {
+  display: grid;
+  grid-template-rows: 50vh 50vh 50vh;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+  .CardList {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 1fr;
+  }
+}
