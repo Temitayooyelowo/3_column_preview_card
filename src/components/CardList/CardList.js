@@ -8,34 +8,37 @@ import './CardList.css';
 
 const CardList = () => {
   return (
-    <div className="CardList">
-      <Card
-        header="Sedans"
-        cardColor="orange"
-        cardParagraph={
-          "Choose a sedan for its affordability and excellent fuel economy. "+
-          "Ideal for cruising cruising in the city or on your next road trip."
-        }
-        imageSrc={icon_sedans}
-      />
-      <Card
-        header="Suvs"
-        cardColor="cyan"
-        cardParagraph={
-          "Take a SUV for its spacious interior, power, and versatility. "+
-          "Perfect for your next family vacation and off-round adventures."
-        }
-        imageSrc={icon_suvs}
-      />
-      <Card
-        header="Luxury"
-        cardColor="darkCyan"
-        cardParagraph={
-          "Cruise in the best car brands without the bloated prices. "+
-          "Enjoy the enhanced comfort of a luxury rental and arrive in style."
-        }
-        imageSrc={icon_luxury}
-      />
+    <div className="OuterCardList">
+      <div className="CardList">
+        <Card
+          header="Sedans"
+          cardColor="orange"
+          cardParagraph={
+            "Choose a sedan for its affordability and excellent fuel economy. "+
+            "Ideal for cruising cruising in the city or on your next road trip."
+          }
+          imageSrc={icon_sedans}
+        />
+        <Card
+          header="Suvs"
+          cardColor="cyan"
+          cardParagraph={
+            "Take a SUV for its spacious interior, power, and versatility. "+
+            "Perfect for your next family vacation and off-round adventures."
+          }
+          imageSrc={icon_suvs}
+        />
+        <Card
+          header="Luxury"
+          cardColor="darkCyan"
+          cardParagraph={
+            "Cruise in the best car brands without the bloated prices. "+
+            "Enjoy the enhanced comfort of a luxury rental and arrive in style."
+          }
+          imageSrc={icon_luxury}
+        />
+      </div>
+      <p className="footer">Challenge by Frontend Mentor. Coded by <a href="https://www.frontendmentor.io/profile/Temitayooyelowo" target="_blank" rel="noreferrer">Tayo</a></p>
     </div>
   )
 }
